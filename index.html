@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+        <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
+        <li><a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a></li>
+        <li><a class="nav-link" href="#Object-Oriented_Programming">Object-Oriented Programming</a></li>
+        <li><a class="nav-link" href="#Error_Handling">Error Handling</a></li>
+        <li><a class="nav-link" href="#Libraries_and_Frameworks">Libraries and Frameworks</a></li>
+        <li><a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+        <li><a class="nav-link" href="#Resources">Resources</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Python is a high-level, interpreted programming language known for its simplicity and readability. Python's syntax allows developers to express concepts in fewer lines of code than in other languages like C++ or Java.</p>
+        <p>Key features of Python:</p>
+        <ul>
+          <li>Easy to learn and use</li>
+          <li>Readable and maintainable code</li>
+          <li>Extensive standard library</li>
+          <li>Dynamic typing and automatic memory management</li>
+          <li>Cross-platform compatibility</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Getting_Started">
+        <header>Getting Started</header>
+        <subsection>
+        <header>Installation</header>
+        <p>Python can be downloaded from the official website python.org. It is available for Windows, macOS, and Linux.</p>
+        <p>To install Python:</p>
+        <ol>
+          <li>Download the latest version of Python for your operating system.</li>
+          <li>Run the installer and follow the instructions.</li>
+          <li>Ensure that Python is added to your system's PATH environment variable (this is an option during installation).</li>
+        </ol>
+        </subsection>
+        <subsection>
+        <header>Hello, World!</header>
+        <p>Once Python is installed, you can start programming! Open a terminal or command prompt and type:</p>
+        <pre><code> print("Hello, World!")</code></pre>
+        <p>This will output:</p>
+        <pre><code> Hello, World!</code></pre>
+        </subsection>
+      </section>
+      <section class="main-section" id="Basic_Syntax">
+        <header>Basic Syntax</header>
+        <subsection>
+        <header>Variables and Data Types</header>
+        <p>Python supports several data types, including:</p>
+        <ul>
+          <li>Integers (int)</li>
+          <li>Floating-point numbers (float)</li>
+          <li>Strings (str)</li>
+          <li>Booleans (bool)</li>
+        </ul>
+        <p>Example:</p>
+        <pre><code>
+  x = 10             # Integer
+  y = 3.14           # Float
+  name = "Python"    # String
+  is_active = True   # Boolean
+        </code></pre>
+        </subsection>
+        <subsection>
+        <header>Operators</header>
+        <pre>
+  a = 10
+  b = 5
+
+  # Arithmetic operators
+  print(a + b)  # 15
+  print(a - b)  # 5
+  print(a * b)  # 50
+  print(a / b)  # 2.0
+
+  # Comparison operators
+  print(a == b)  # False
+  print(a > b)   # True
+
+        </pre>
+        </subsection>
+        <subsection>
+        <header>Conditionals</header>
+        <p>Conditionals are used to execute code based on certain conditions. Python uses if, elif, and else.</p>
+        <pre><code>
+  x = 20
+  if x > 10:
+      print("x is greater than 10")
+  elif x == 10:
+      print("x is equal to 10")
+  else:
+      print("x is less than 10")
+        </code></pre>
+        </subsection>
+        <subsection>
+        <header>Loops</header>
+        <p>Python supports both for and while loops.</p>
+        <p>For Loop:</p>
+        <pre><code>
+  for i in range(5):
+    print(i)
+        </code></pre>
+        <p>While Loop:</p>
+        <pre><code>
+  i = 0
+  while i < 5:
+      print(i)
+      i += 1
+        </code></pre>
+        </subsection>
+        <section>
+        <header>Functions</header>
+        <pre><code>
+  def greet(name):
+    return f"Hello, {name}!"
+
+  print(greet("Alice"))
+        </code></pre>
+        <p>Functions can accept parameters and return values:</p>
+        <pre><code>
+  def add(x, y):
+    return x + y
+
+  result = add(3, 4)
+  print(result)  # 7
+        </code></pre>
+        </subsection>
+      </section>
+      <section class="main-section" id="Modules_and_Packages">
+        <header>Modules and Packages</header>
+        <p>Python has a rich standard library, and you can import external modules using the import statement.</p>
+        <pre><code>
+  import math
+
+  print(math.sqrt(16))  # 4.0
+        </code></pre>
+        <subsection>
+          <header>Creating Modules</header>
+          <p>You can also create your own modules by saving Python code in a .py file.</p>
+          <p>Example:</p>
+          <ol>
+            <li>Create a file mymodule.py:</li>
+            <pre><code>
+  def greet(name):
+    return f"Hello, {name}!"
+            </code></pre>
+            <li>Import mymodule in another Python file:</li>
+            <pre><code>
+  import mymodule
+
+  print(mymodule.greet("Bob"))
+            </code></pre>
+          </ol>
+        </subsection>
+      </section>
+      <section class="main-section" id="Object-Oriented_Programming">
+        <header>Object-Oriented Programming</header>
+        <p>Python supports object-oriented programming (OOP). The basic concepts include:</p>
+        <ul>
+          <li>Classes</li>
+          <li>Objects</li>
+          <li>Methods</li>
+          <li>Inheritance</li>
+        </ul>
+        <subsection>
+          <header>Creating a Class</header>
+          <pre><code>
+  class Dog:
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+    
+    def bark(self):
+        print(f"{self.name} is barking!")
+
+  # Create an object
+  dog1 = Dog("Fido", "Labrador")
+  dog1.bark()  # Output: Fido is barking!
+          </code></pre>
+        </subsection>
+      </section>
+      <section class="main-section" id="Error_Handling">
+        <header>Error Handling</header>
+        <p>Python uses try, except, and finally blocks to handle errors.</p>
+        <pre><code>
+  try:
+      x = 10 / 0
+  except ZeroDivisionError:
+      print("Cannot divide by zero!")
+  finally:
+      print("Execution completed.")
+        </code></pre>
+      </section>
+      <section class="main-section" id="Libraries_and_Frameworks">
+        <header>Libraries and Frameworks</header>
+        <p>Python has many popular libraries and frameworks for different purposes, including:</p>
+        <ul>
+          <li>Data Science: numpy, pandas, matplotlib, scikit-learn</li>
+          <li>Web Development: Flask, Django, FastAPI</li>
+          <li>Machine Learning: TensorFlow, PyTorch</li>
+          <li>Automation: selenium, requests</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Best_Practices">
+        <header>Best Practices</header>
+        <ol>
+          <li>Use meaningful variable names to improve readability.</li>
+          <li>Follow PEP 8, the official style guide for Python code.</li>
+          <li>Write comments and documentation to explain your code.</li>
+          <li>Use list comprehensions and other Pythonic idioms to make your code more concise.</li>
+          <li>Avoid global variables—use functions and classes to encapsulate state.</li>
+        </ol>
+      </section>
+      <section class="main-section" id="Resources">
+        <header>Resources</header>
+        <ul>
+          <li><a href="https://www.python.org/" target="_blank">Official Python Website</a></li>
+          <li><a href="https://docs.python.org/3/library/" target="_blank">Python Standard Library</a></li>
+          <li><a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 – Style Guide for Python Code</a></li>
+          <li><a href="https://pypi.org/" target="_blank">Python Package Index (PyPI)</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
